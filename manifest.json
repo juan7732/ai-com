@@ -12,7 +12,8 @@
   "content_scripts": [
     {
       "js": ["src/index.js"],
-      "matches": ["https://ai.com"]
+      "matches": ["*://ai.com/","*://x.ai/*"],
+      "run_at": "document_start"
     }
   ]
 }
